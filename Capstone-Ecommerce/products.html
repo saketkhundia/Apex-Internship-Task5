@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Saket Shop — Products</title>
+  <link href="assets/styles.css" rel="stylesheet">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-flex">
+      <a class="brand" href="index.html">E-<span>Shop</span></a>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="cart.html" class="nav-link cart-link">Cart (<span id="cart-count-2">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container products-page">
+    <aside class="sidebar">
+      <h4>Filters</h4>
+      <label>Category
+        <select id="filter-category">
+          <option value="all">All</option>
+        </select>
+      </label>
+
+      <label>Price range
+        <select id="filter-price">
+          <option value="all">All</option>
+          <option value="0-50">$0 - $50</option>
+          <option value="51-200">$51 - $200</option>
+          <option value="201-1000">$201+</option>
+        </select>
+      </label>
+
+      <h4>Sort</h4>
+      <select id="sort-option">
+        <option value="default">Default</option>
+        <option value="priceLow">Price: Low → High</option>
+        <option value="priceHigh">Price: High → Low</option>
+        <option value="rating">Rating</option>
+      </select>
+
+      <h4>Search</h4>
+      <input id="search-input" type="search" placeholder="Search products...">
+      <button id="clear-filters" class="btn btn-outline small">Clear</button>
+    </aside>
+
+    <section class="products-grid" id="productList" aria-live="polite">
+      <!-- JS will inject product cards here -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Saket — Capstone Project</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

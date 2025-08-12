@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>E-Shop — Home</title>
+  <link href="assets/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-flex">
+      <a class="brand" href="index.html">E<span>-Shop</span></a>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="cart.html" class="nav-link cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1>Build. Buy. Enjoy.</h1>
+        <p>Capstone e-commerce demo — responsive, interactive, and fast.</p>
+        <div class="hero-actions">
+          <a class="btn" href="products.html">Shop Products</a>
+          <a class="btn btn-outline" href="about.html">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="https://picsum.photos/600/400?random=21" alt="shopping" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="container features">
+    <div class="feature-card">
+      <h3>Responsive</h3>
+      <p>Looks great on mobile, tablet and desktop.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Local Cart</h3>
+      <p>Cart persists with localStorage.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Filtering & Sorting</h3>
+      <p>Find products fast with filters and sorting.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Saket — Capstone Project</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
